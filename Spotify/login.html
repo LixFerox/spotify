@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/structure.css" />
+    <link rel="stylesheet" href="src/styles/login.css" />
+    <link rel="shortcut icon" href="src/images/icon.svg" type="image/x-icon" />
+    <title>Iniciar sesión - Spotify</title>
+  </head>
+  <body>
+    <div id="logo" class="box">
+      <img src="src/images/logo.png" alt="Logo de Spotify" />
+    </div>
+    <div id="login-options" class="box">
+      <h1>Inicia sesión en Spotify</h1>
+      <button class="buttons">
+        <span><img src="src/images/google.png" alt="Logo de Google" /></span>
+        <span class="button-text">Continuar con Google</span>
+      </button>
+      <button class="buttons">
+        <span
+          ><img src="src/images/facebook.png" alt="Logo de Facebook"
+        /></span>
+        <span class="button-text">Continuar con Facebook</span>
+      </button>
+      <button class="buttons">
+        <span><img src="src/images/apple.png" alt="Logo de Apple" /></span>
+        <span class="button-text">Continuar con Apple</span>
+      </button>
+      <hr id="space-1" />
+      <form action="" class="data">
+        <div class="data">
+          <p>Correo electrónico o nombre de usuario</p>
+          <input
+            type="text"
+            placeholder="Correo electrónico o nombre de usuario"
+            class="data-input"
+          />
+        </div>
+        <div class="data">
+          <p>Contraseña</p>
+          <input type="text" placeholder="Contraseña" class="data-input" />
+        </div>
+        <div id="remember">
+          <div id="remember-checkbox">
+            <input type="checkbox" id="remember-checkbox-input" />
+            <label for="remember-checkbox-input" id="checkbox-ball"></label>
+          </div>
+          <label for="remember-checkbox-input" id="checkbox-text"
+            >Recuérdame</label
+          >
+        </div>
+        <button id="login">Iniciar Sesión</button>
+        <p class="text-options">
+          <a href="#">¿Se te ha olvidado la contraseña?</a>
+        </p>
+        <hr id="space-2" />
+        <p class="text-options">
+          ¿No tienes cuenta? <a href="#">Suscribete a Spotify</a>
+        </p>
+      </form>
+    </div>
+    <footer class="box" id="terms">
+      <p>
+        Este sitio está protegido por reCAPTCHA. Se aplican los
+        <a href="https://policies.google.com/terms">Términos del servicio</a> y
+        la
+        <a href="https://policies.google.com/privacy">Política de privacidad</a>
+        de Google.
+      </p>
+    </footer>
+  </body>
+</html>
