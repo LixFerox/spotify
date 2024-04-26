@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="src/styles/main.css">
 <link rel="shortcut icon" href="src/images/icon.svg" type="image/x-icon" />
 </head>
-<body>
+<body onload="changeUser()">
   <div id="app" class="d-flex flex-column">
     <div id="principal" class="d-flex">
       <nav id="latNav" class="w-100 pt-4 d-flex flex-column">
@@ -128,7 +128,7 @@
                       d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
                   </svg>
                 </div>
-                USUARIO              
+                <span id="sessionuser">USUARIO</span>              
               </button>
               <div class="dropdownMenuButton1-dropContent">
                 <a href="./login.html">Cerrar sesión</a>
@@ -524,11 +524,16 @@
                   d="M12.7 1a.7.7 0 00-.7.7v5.15L2.05 1.107A.7.7 0 001 1.712v12.575a.7.7 0 001.05.607L12 9.149V14.3a.7.7 0 00.7.7h1.6a.7.7 0 00.7-.7V1.7a.7.7 0 00-.7-.7h-1.6z">
                 </path>
               </svg></button>
-            <button type="button" class="btn playPause"><svg role="img" height="24" width="24" viewBox="0 0 24 24">
+            <button type="button" onclick="changeButton()" class="btn playPause" id="changePlayButton">
+              <svg role="img" height="24" width="24" viewBox="0 0 24 24" id="play-Button-Image">
                 <path
                   d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z">
                 </path>
-              </svg></button>
+              </svg>
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="black"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-player-pause" id="stop-Button-Image">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 5m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" /><path d="M14 5m0 1a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v12a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1z" />
+              </svg>
+            </button>
             <button type="button" class="icones proximo"><svg role="img" height="16" width="16" viewBox="0 0 16 16">
                 <path
                   d="M12.7 1a.7.7 0 00-.7.7v5.15L2.05 1.107A.7.7 0 001 1.712v12.575a.7.7 0 001.05.607L12 9.149V14.3a.7.7 0 00.7.7h1.6a.7.7 0 00.7-.7V1.7a.7.7 0 00-.7-.7h-1.6z">
@@ -541,7 +546,7 @@
                 </path>
               </svg></button>
           </div>
-          <div id="barraDeProgresso"><small>00:00</small><input type="range"><small>00:00</small></div>
+          <div id="barraDeProgresso"><small>00:00</small><input type="range"><small id="duration">00:00</small></div>
         </div>
         <div id="configAudio" class="d-flex align-items-center">
           <button type="button" class="icones legenda"><svg onClick="enabledisable(this)" role="img" height="16"
@@ -590,6 +595,8 @@
     </div>
   </div>
   <script src="src/scripts/playsong.js"></script>
-  <script src="src/scripts/url.js"></script>
+  <script src="src/scripts/playbutton.js"></script>
+  <script src="src/scripts/forwarding.js"></script>
+  <script src="src/scripts/username.js"></script>
 </body>
 </html>

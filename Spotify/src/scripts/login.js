@@ -7,10 +7,12 @@ function validate() {
   let username = document.getElementById("username").value;
   let password = document.getElementById("password").value;
   if (username == datauser[0] && password == datapassword[0]) {
-    window.location.href = "index.html";
+    location.replace(
+      (window.location.href = "index.html" + "?user=" + username)
+    );
   }
   if (user == datauser[0] && password == datapassword[0]) {
-    window.location.href = "index.html";
+    location.replace((window.location.href = "index.html" + "?user=" + user));
   }
   if ((username = "" && password == "")) {
     alert("Debes rellenar todos los campos");
