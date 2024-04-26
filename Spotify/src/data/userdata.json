@@ -1,0 +1,63 @@
+{
+  "users": [
+    {
+      "username": "Pepe",
+      "traks": [
+        {
+          "title": "M.A.I",
+          "artist": "Milo J",
+          "duratiom": "3:04",
+          "image": "../img-song/mai.jfif",
+          "audio": "../audios/mai.mp3"
+        },
+        {
+          "title": "Neverita",
+          "artist": "Bad Bunny",
+          "duratiom": "2:53",
+          "image": "../img-song/neverita.jfif",
+          "audio": "../audios/neverita.mp3"
+        },
+        {
+          "title": "Sin señal",
+          "artist": "Quevedo",
+          "duratiom": "3:05",
+          "image": "../img-song/sinsenal.jfif",
+          "audio": "../audios/sinsenal.mp3"
+        }
+      ]
+    },
+    {
+      "username": "Jose",
+      "traks": [
+        {
+          "title": "Tusa",
+          "artist": "Karol G",
+          "duratiom": "3:20",
+          "image": "../img-song/tusa.jfif",
+          "audio": "../audios/tusa.mp3"
+        },
+        {
+          "title": "Cuatro Babys",
+          "artist": "Maluma",
+          "duratiom": "4:38",
+          "image": "../img-song/cuatrobabys.jfif",
+          "audio": "../audios/cuatrobabys.mp3"
+        },
+        {
+          "title": "Bzrp Session 52",
+          "artist": "Bizarrap, Quevedo",
+          "duratiom": "3:18",
+          "image": "../img-song/quedate.jfif",
+          "audio": "../audios/quedate.mp3"
+        },
+        {
+          "title": "Ultra Solo",
+          "artist": "Polimá",
+          "duratiom": "3:47",
+          "image": "../img-song/ultrasolo.jfif",
+          "audio": "../audios/ultrasolo.mp3"
+        }
+      ]
+    }
+  ]
+}
